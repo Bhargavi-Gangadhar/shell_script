@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#Shell script to take user input
+
+echo  "Hello user, please enter your name" 
+
+read  name
+echo  Hi $name
+
+#Shell script to take input from arguments
+
+echo "Hello $1, please enter your age"
+
+read age
+
+#Shell Script to print the variables
+echo $1 age is $age
+
+#Shell Script to compare two numbers
+
+echo "Enter first number"
+read First_no
+echo "Enter Second number"
+read Second_no
+if [[ $First_no -eq $Second_no ]]
+then
+ echo "Both are equal"
+else
+ echo "Both are not equal"
+fi
+
+#NOTE: USE  -gt command to compare  greater than or not
+# USE -lt command to compare less than or not
+
